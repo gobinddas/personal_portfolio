@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(12, 14, 14);
+}
+.container .nav {
+  display: flex;
+  justify-content: center;
+}
+.container .nav .navbar {
+  width: 70%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.container .nav .navbar .navbar-first {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.container .nav .navbar .navbar-first .first a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 20px;
+  font-family: "Russo One", sans-serif;
+}
+.container .nav .navbar .navbar-second i {
+  color: lightgreen;
+  font-size: 60px;
+  animation: spin 2s alternate-reverse infinite;
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.container .nav .navbar .navbar-third {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.container .nav .navbar .navbar-third .third a {
+  text-decoration: none;
+  color: white;
+}
+.container .nav .navbar .navbar-third .third a i {
+  font-size: 20px;
+  transition: transform 0.7s ease-in-out;
+}
+.container .nav .navbar .navbar-third .third a i:hover {
+  transform: rotate(36000deg);
+}
+.container .content {
+  margin-top: 200px;
+  width: 100%;
+  height: 65vh;
+}
+.container .content h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+}
+.container .content .free {
+  color: lightgreen;
+  font-weight: 100;
+}
+.container .content .img {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.container .content .img .circle {
+  height: 214px;
+  width: 214px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid lightgreen;
+}
+.container .content .img .circle .inner {
+  top: 0;
+  right: 0;
+  height: 207px;
+  width: 207px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: rgb(12, 14, 14);
+}
+.container .content .img .circle .inner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+.container .content .img .circle .inner img:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=index.css.map */
